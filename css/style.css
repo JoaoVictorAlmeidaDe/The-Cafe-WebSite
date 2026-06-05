@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+/* Sections */
+.section {
+    padding: 40px 0;
+    min-height: 40vh;
+}
+
+#Home,
+#Menu,
+#Where {
+    scroll-margin-top: 70px;
+}
+
+#About {
+    scroll-margin-top: 25px;
+}
+
+/* MENU */
+.menu-topo ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.menu-topo li {
+    flex: 1;
+}
+
+.menu-topo a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-topo a:hover {
+    background: rgba(219, 219, 219, 0.527);
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    #cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-topo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* inicio / imagem */
+
+figure {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+    /* Evita que qualquer sobra crie barra de rolagem */
+}
+
+#img-paos {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXTO CENTRAL */
+.title-centro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+}
+
+/* TEXTO ESQUERDA */
+.hours {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* TEXTO DIREITA */
+.date {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* section About */
+#about-center h1 {
+    text-align: center;
+    font-size: 15pt;
+    background: black;
+    color: white;
+
+    display: inline-block;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#about-center {
+    text-align: center;
+    width: 100%;
+}
+
+.paragrafo-01,
+.paragrafo-02 {
+    /* Centraliza o bloco na tela */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Largura controlada para não espalhar muito */
+    max-width: 700px;
+    width: 90%;
+
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+    margin-top: 30px;
+}
+
+.paragrafo-01 {
+    margin-top: 60px;
+}
+
+.citacao {
+    background-color: #f1f1f1;
+    border-left: 6px solid #ccc;
+    /* A barrinha cinza na esquerda */
+    padding: 20px 30px;
+    max-width: 690px;
+    margin: 40px auto;
+    font-style: italic;
+    line-height: 1.6;
+    font-size: 17pt;
+}
+
+#img-coffe {
+    width: 40%;
+}
+
+.about-final-textos {
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-final-textos h6 {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    /* Espacinho entre o título e o horário */
+
+}
+
+.about-final-textos p {
+    display: inline-block;
+    margin-bottom: 10px;
+    /* Espaço para a linha de baixo */
+}
+
+/* The Menu Coffee */
+.title h1 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    /* Faz o fundo preto envolver só o texto */
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin-bottom: 30px;
+    /* Cria o espaço entre o título e as abas */
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: -90px;
+}
+
+.menu-card {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra leve das imagens */
+}
+
+.tab-header {
+    display: flex;
+}
+
+.tab-btn {
+    flex: 1;
+    /* Faz cada botão ocupar metade (50%) */
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    font-size: 18px;
+}
+
+/* Cor do botão ativo (Cinza escuro) */
+.tab-btn.active {
+    background-color: #616161;
+    color: white;
+}
+
+/* Espaçamentos internos do texto */
+.tab-content {
+    padding: 50px;
+    text-align: left;
+    /* Garante que o texto comece na esquerda */
+}
+
+.tab-content h3 {
+    margin: 25px 0 20px 0;
+    /* Distância entre os itens */
+}
+
+.tab-content p {
+    color: #757575;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* imagem coffe 02 */
+.foto-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#img-coffeHouse02 {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    filter: grayscale(100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.Where-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.Where-container h1 {
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin-bottom: 30px;
+    background: black;
+    display: inline-block;
+    color: white;
+    font-size: 16pt;
+    margin-top: -50px;
+}
+
+.where-information p {
+    text-align: center;
+    justify-content: center;
+    font-size: 14pt;
+    margin-right: 400px;
+}
+
+.foto-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#img-map {
+    width: 85%;
+    max-width: 700px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container {
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: monospace;
+    margin-left: 590px;
+}
+
+.textos-map {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    max-width: 700px;
+    text-align: start;
+}
+
+.title-tag {
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* O negrito do Reserve */
+.bold-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Form menu inputs, etc */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    justify-self: center;
+    align-items: center;
+}
+
+input {
+    padding: 30px;
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+footer {
+    background: rgb(241, 241, 241);
+    text-align: center;
+    justify-items: center;
+    margin-top: 50px;
+    line-height: 27px;
+    padding-bottom: 50px;
+    padding-top: 48px;
+    text-size-adjust: 100%;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.social-links i {
+    font-size: 20px;
+    color: #E1306C;
+    transition: 0.3s;
+}
+
+.social-links i:hover {
+    transform: scale(1.2);
+}

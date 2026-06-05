@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="Container">
+        <header id="cabecalho">
+            <nav class="menu-topo">
+                <ul class="lista">
+                    <li><a href="#Home">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Menu">MENU</a></li>
+                    <li><a href="#Where">WHERE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Home" class="section">
+            <div class="inicio">
+                <figure>
+                    <img src="../imagens/imagem-paos.jpg" id="img-paos">
+                    <figcaption class="title-centro">The Cafe</figcaption>
+                    <figcaption class="hours">Open From 6am to 5pm</figcaption>
+                    <figcaption class="date">15 Adr street, 5015</figcaption>
+                </figure>
+            </div>
+
+        </section>
+        <section id="About" class="section">
+            <div id="about-center">
+                <h1>ABOUT THE CAFE</h1>
+                <p class="paragrafo-01">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                <p class="paragrafo-02">In addition to our full espresso and brew bar menu, we serve fresh
+                    made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and
+                    other good stuff.</p>
+                <div class="citacao">
+                    <p> "Use products from nature for what it's worth - but never too early, nor too late." Fresh is
+                        the
+                        new sweet.
+                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+                    </p>
+                </div>
+                <div class="about-down">
+                    <img src="../imagens/imagem-coffe.jpg" id="img-coffe">
+                    <div class="about-final-textos">
+                        <div>
+                            <h6>Opening hours:</h6>
+                            <p>everyday from 6am to 5pm.</p>
+                        </div>
+
+                        <div>
+                            <h6>Address:</h6>
+                            <p>15 Adr street, 5015, NY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section id="Menu" class="section">
+        <div class="menu-container">
+            <!-- Botões das Abas -->
+            <div class="title">
+                <h1>THE MENU</h1>
+            </div>
+            <div class="menu-card">
+                <div class="tab-header">
+                    <button class="tab-btn active" onclick="openTab(event, 'Eat')">Eat</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Drink')">Drink</button>
+                </div>
+
+                <!-- Conteúdo das Abas -->
+                <div id="Eat" class="tab-content" style="display:block;">
+                    <h3>Bread Basket</h3>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    <h3>Honey Almond Granola with Fruits</h3>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    <h3>Belgian Waffle</h3>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                    <h3>Scrambled eggs</h3>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+                    </p>
+                    <h3>Blueberry Pancakes</h3>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                </div>
+
+                <div id="Drink" class="tab-content" style="display:none;">
+                    <h3>Coffee</h3>
+                    <p>Regular coffee 2.50</p>
+                    <h3>Chocolato</h3>
+                    <p>Chocolate espresso with milk 4.50</p>
+                    <h3>Corretto</h3>
+                    <p>Whiskey and coffee 5.00</p>
+                    <h3>Iced tea</h3>
+                    <p>Hot tea, except not hot 3.00</p>
+                    <h3>Soda</h3>
+                    <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+            </div>
+        </div>
+        <div class="foto-coffee">
+            <img src="../imagens/coffeehouse2.jpg" id="img-coffeHouse02">
+        </div>
+    </section>
+    <section id="Where" class="section">
+        <div class="Where-container">
+            <h1>WHERE TO FIND US</h1>
+        </div>
+        <div class="where-information">
+            <p>Find us at some address at some place.</p>
+            <div class="foto-location">
+                <img src="../imagens/map.jpg" id="img-map">
+            </div>
+            <div class="map-container">
+                <p class="textos-map">
+                    <span class="title-tag">FYI!</span>
+                    We offer full-service catering for any event, large or small. We understand your needs and we will
+                    cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                </p>
+
+                <p class="textos-map">
+                    <span class="bold-text">Reserve</span> a table, ask for today's special or just send us a message:
+                </p>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <input type="text" placeholder="Name" class="in-txt">
+                    <input type="number" placeholder="How many people" class="in-txt">
+                    <input type="datetime-local" placeholder="06/05/2026  20:05" class="in-txt">
+                    <input type="text" placeholder="Message / special requirements" class="in-txt">
+                    <button value="" class="btn-send">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <h1>Desenvolvido por João Victor</h1> <a href="https://www.instagram.com/dev.byjoao/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
