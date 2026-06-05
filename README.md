@@ -8,7 +8,9 @@ Website inspirado no layout da The Coffee.
 
 ## Preview
 
-[![Watch the video]([https://youtu.be/QgEOc263XZE](https://youtu.be/QgEOc263XZE))
+[![Watch the video]
+([<img width="1893" height="911" alt="image" src="https://github.com/user-attachments/assets/2c7546ab-a078-4f3b-aa08-7c44e0368c88" />
+](https://youtu.be/QgEOc263XZE))
 
 🔗 Live Demo: https://github.com/JoaoVictorAlmeidaDe/The-Cafe-WebSite
 
